@@ -1,0 +1,71 @@
+/* Layout */
+.row,
+.col {
+	display: flex;
+}
+.col {
+	flex-direction: column;
+}
+.justify-center {
+	justify-content: center;
+}
+.justify-star {
+	justify-content: flex-start;
+}
+.justify-end {
+	justify-content: flex-end;
+}
+.justify-between {
+	justify-content: space-between;
+}
+.justify-evenly {
+	justify-content: space-evenly;
+}
+.justify-around {
+	justify-content: space-around;
+}
+.align-center {
+	align-items: center;
+}
+.align-star {
+	align-items: flex-start;
+}
+.align-end {
+	align-items: flex-end;
+}
+.align-stretch {
+	align-items: stretch;
+}
+.align-baseline {
+	align-items: baseline;
+}
+.align-self-center {
+	align-self: center;
+}
+.flex1 {
+	flex: 10%;
+}
+.flex2 {
+	flex: 20%;
+}
+.flex3 {
+	flex: 30%;
+}
+.flex4 {
+	flex: 40%;
+}
+.flex5 {
+	flex: 50%;
+}
+.flex6 {
+	flex: 60%;
+}
+.flex7 {
+	flex: 70%;
+}
+.flex8 {
+	flex: 80%;
+}
+.flex9 {
+	flex: 90%;
+}
