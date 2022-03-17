@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@600&display=swap');
+:root {
+	--txt-gradient1: #3959d7;
+	--txt-gradient2: #2a4ac8;
+	--txt-heading: #1f3e72;
+	--txt-general: #6d7b93;
+	--backgroung-special: #f1f5ff;
+	--background-icon: #e9f1fe;
+	--background-image1: #0998e6;
+	--backgrounf-image2: #3760da;
+	--font-heading: 'Monserrat', sans-serif;
+	--font-base: 'Poppins', sans-serif;
+	--box-hover-shadow: 0 1px 8px rgba(183, 194, 236, 0.3), 0 3px 8px rgba(183, 194, 236, 0.2),
+		0 7px 8px rgba(183, 194, 236, 0.1);
+}
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	color: var(--txt-general);
+	font-family: var(--font-base);
+	font-weight: 600;
+}
+
+header {
+	display: grid;
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	top: 0;
+	padding: 30px 40px;
+	grid-template-columns: repeat(12, 1fr);
+	background-color: rgba(255, 255, 255, 0.9);
+	border-bottom: 3px solid white;
+	font-size: 17px;
+	overflow: hidden;
+}
+.headings {
+	color: var(--txt-heading);
+	font-family: var(--font-heading);
+	font-weight: 900;
+}
+.logo {
+	background-image: -webkit-linear-gradient(90deg, var(--txt-gradient1), var(--txt-gradient2));
+	background-image: linear-gradient(90deg, var(--txt-gradient1), var(--txt-gradient2));
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	font-family: var(--font-heading);
+	font-size: 1.4em;
+	font-weight: 800;
+}
+a {
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 5px;
+	border-radius: 8px;
+	color: var(--font-base);
+	text-align: center;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.nav:hover {
+	background-image: linear-gradient(45deg, var(--txt-gradient1), var(--txt-gradient2));
+	color: white;
+	font-family: var(--font-heading);
+	box-shadow: var(--box-hover-shadow);
+}
+section {
+	display: grid;
+}
+.main-info {
+	position: relative;
+	grid-template-columns: 1fr 2fr 1fr 3fr;
+	grid-template-rows: repeat(7, 0.5fr);
+}
+.main-info .headings {
+	margin: 20px 0;
+	font-size: 3.3em;
+}
+.schedule-info {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+.schedule-info p {
+	margin: 0;
+}
+.blue-icon {
+	position: relative;
+	margin-right: 15px;
+	padding: 7px;
+	box-shadow: var(--box-hover-shadow);
+	border: 2px solid white;
+	background-image: -webkit-linear-gradient(90deg, var(--txt-gradient1), var(--txt-gradient2));
+	background-image: linear-gradient(90deg, var(--txt-gradient1), var(--txt-gradient2));
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	font-size: 0.95em;
+}
+.blue-icon-backgroud {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--background-icon);
+}
+.yellow-icon {
+	margin-right: 15px;
+	padding: 7px;
+	background-color: #fff8de;
+	border: 2px solid white;
+	color: #ffd012;
+	font-size: 0.95em;
+	box-shadow: 0 1px 8px #fff8de, 0 3px 8px #fff8de;
+}
+.people-image {
+	background-image: linear-gradient(135deg, var(--background-image1), var(--backgrounf-image2));
+}
