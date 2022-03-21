@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #ddd;
+	font-family: 'VT323', monospace;
+	font-size: 1.2em;
+}
+.view {
+	position: relative;
+	padding: 2rem 0;
+}
+.pokedex {
+	height: 100%;
+}
+.poke-info {
+	position: absolute;
+	display: grid;
+	padding: 1.5rem;
+	grid-gap: 0.5rem;
+	grid-template-areas:
+		'inputNumber inputName inputName inputBtn'
+		'pokeImg pokeImg type type'
+		'pokeImg pokeImg height height'
+		'pokeImg pokeImg weight weight'
+		'evolutions evolutions evolutions evolutions';
+	grid-template-columns: 1fr 1fr 1fr 0.5fr;
+	grid-template-rows: 0.8fr repeat(4, 0.5fr);
+	align-items: center;
+}
+.inputNumber {
+	grid-area: inputNumber;
+}
+.inputName {
+	grid-area: inputName;
+}
+.poke-info input,
+.pokeImg {
+	width: 100%;
+}
+.poke-info input {
+	padding: 0.3rem;
+	background-color: transparent;
+	border: 2px solid grey;
+	border-radius: 5px;
+	font-family: 'VT323', monospace;
+	font-size: 1.3rem;
+	text-transform: capitalize;
+	outline: none;
+	transition: color 0.4s, border-color 0.4s, background-color 0.4s;
+}
+.poke-info input:not([type='submit']):focus {
+	border-color: #008cff;
+}
+.poke-info p {
+	margin: 0;
+}
+.buttons {
+	grid-area: inputBtn;
+}
+.buttons input[type='submit'] {
+	padding: 0.1rem;
+	background-color: #008cff !important;
+	border-color: #008cff !important;
+	color: white;
+	cursor: pointer;
+}
+.buttons input[type='reset'] {
+	margin-bottom: 0.5rem;
+	padding: 0.1rem;
+	background-color: white !important;
+	border-color: white !important;
+	color: #008cff;
+	cursor: pointer;
+}
+.buttons input[type='submit']:hover {
+	background-color: transparent !important;
+	color: #008cff;
+}
+.buttons input[type='reset']:hover {
+	background-color: transparent !important;
+	border-color: #008cff !important;
+}
+.pokeImg {
+	grid-area: pokeImg;
+}
+.type {
+	grid-area: type;
+}
+.type::before {
+	content: 'Tipo: ';
+}
+.height {
+	grid-area: height;
+}
+.height::before {
+	content: 'Altura: ';
+}
+.weight {
+	grid-area: weight;
+}
+.weight::before {
+	content: 'Peso: ';
+}
+.evolutions {
+	grid-area: evolutions;
+}
+.evolutions::before {
+	content: 'Evoluciones:';
+}
+.evolutions,
+.type {
+	text-transform: capitalize;
+}
+footer {
+	margin: 2rem 0;
+	padding: 1rem 0;
+}
+.col,
+.row {
+	display: flex;
+	flex-direction: column;
+}
+.row {
+	flex-direction: row;
+}
+.center {
+	justify-content: center;
+	align-items: center;
+}

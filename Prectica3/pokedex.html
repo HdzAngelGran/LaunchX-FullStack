@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Pok&eacute;dex</title>
+	</head>
+	<body>
+		<form id="pokeForm" action="javascript:fetchPokemon()"></form>
+		<div class="view col center">
+			<img class="pokedex" src="./img/pokedex.svg" alt="Pok&eacute;dex" />
+			<div class="poke-info">
+				<div class="inputNumber">
+					<label for="pokeNumber">#</label>
+					<input type="number" name="pokeNumber" id="pokeNumber" form="pokeForm" min="1" step="1" />
+				</div>
+				<div class="inputName">
+					<label for="pokeName">Nombre</label>
+					<input type="text" name="pokeName" id="pokeName" form="pokeForm" />
+				</div>
+				<div class="buttons">
+					<input type="reset" form="pokeForm" onclick="javascript:limpiar()" value="Limpiar" />
+					<input type="submit" form="pokeForm" value="Buscar" />
+				</div>
+				<img class="pokeImg" src="./img/pokeball.png" alt="Pok&eacute;imagen" />
+				<p id="pokeType" class="type"></p>
+				<p id="pokeHeight" class="height"></p>
+				<p id="pokeWeight" class="weight"></p>
+				<div class="evolutions col center">
+					<p id="pokeEvolutions"></p>
+				</div>
+			</div>
+		</div>
+		<footer class="col center">
+			<section>&copy;Copyright 2022 - Hernandez Granciano Angel Omar</section>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
