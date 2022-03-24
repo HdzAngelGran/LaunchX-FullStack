@@ -7,4 +7,5 @@ Realizado con:
 - HTML vanilla
 - CSS vanilla
 - JS vanilla
-- SVG (pokédex base)
+- [PokéAPI](https://pokeapi.co/)
+- [SVG](./img/pokedex.svg)
