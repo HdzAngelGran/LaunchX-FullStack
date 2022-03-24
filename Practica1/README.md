@@ -6,6 +6,7 @@ Realizado con:
 
 - HTML vanilla
 - CSS vanilla
+  - Layout: Flexbox
 
 Mejoras extras faltantes:
 

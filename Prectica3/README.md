@@ -6,6 +6,7 @@ Realizado con:
 
 - HTML vanilla
 - CSS vanilla
+  - Layout: Flexbox, Grid
 - JS vanilla
 - [PokéAPI](https://pokeapi.co/)
 - [SVG](./img/pokedex.svg)

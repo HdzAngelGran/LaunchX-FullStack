@@ -8,6 +8,7 @@ Realizado con:
 
 - HTML vanilla
 - CSS vanilla
+  - Layout: Flexbox, Grid
 
 Mejoras extras faltantes:
 
